@@ -10,9 +10,13 @@
       <div class="menu-top">
         <div class="menu-top__wrapper container">
           <a class="logo" href="index.html">
-            <img src="img/logo.svg" width="109.625" height="17.281" alt="Логотип">
+            <img src="img/logo.svg" width="109" height="17" alt="Логотип">
           </a>
-          <!-- здесь будет форма -->
+          <form class="menu-top__form form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="form__search-wrapper" for="search" aria-label="Поиск по сайту">
+              <input class="form__search" id="search" type="search" name="search" placeholder="Поиск:" required>
+            </label>
+          </form>
           <div class="menu-top__block-buyer block-buyer">
             <a class="block-buyer__link block-buyer__link--bookmarks" href="#">Закладки: 0</a>
             <a class="block-buyer__link block-buyer__link--basket" href="#">Корзина: 0</a>
@@ -75,7 +79,7 @@
       <div class="breadcrumbs container">
         <ul class="breadcrumbs__list">
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link breadcrumbs__link--main" href="#"><span class="visually-hidden">главная</span></a>
+            <a class="breadcrumbs__link breadcrumbs__link--main" href="#" aria-label="главная"></a>
           </li>
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__link" href="#">каталог</a>
@@ -94,7 +98,73 @@
             <div class="catalog__header">
               <h3 class="catalog__header-title">фильтр:</h3>
             </div>
-            <!-- здесь будет форма -->
+            <form class="form" action="https://echo.htmlacademy.ru" method="post">
+		      <fieldset class="form__fieldset">
+		        <legend class="form__legend">цена:</legend>
+				<div class="form__range-filter range-filter">
+				  <div class="range-filter__controls">
+                    <div class="range-filter__scale"><div style="width: 84%;" class="range-filter__bar"></div></div>
+                    <div class="range-filter__toggle range-filter__toggle--min" tabindex="0" aria-label="цена минимум"></div>
+                    <div class="range-filter__toggle range-filter__toggle--max" tabindex="0" aria-label="цена максимум"></div>
+		          </div>
+				  <div class="range-filter__price-controls">
+				    <label>
+				      <input class="range-filter__input" name="min-prace" type="text" value="0">
+				    </label>
+				    <span class="range-filter__separator"> — </span>
+				    <label>
+				      <input class="range-filter__input" name="max-prace" type="text" value="30000">
+				    </label>
+				  </div>
+				</div>
+		      </fieldset>
+		      <fieldset class="form__fieldset">
+		        <legend class="form__legend">производители:</legend>
+				<ul class="form__checkbox-list">
+				  <li class="form__checkbox-item">
+				    <label class="form__checkbox-label">
+				    <input class="form__checkbox-input" type="checkbox" name="bosch" checked>
+				    <span class="form__checkbox-indicator"></span>bosch</label>
+				  </li>
+				  <li class="form__checkbox-item">
+				    <label class="form__checkbox-label">
+				    <input class="form__checkbox-input" type="checkbox" name="интерскол">
+				    <span class="form__checkbox-indicator"></span>интерскол</label>
+				  </li>
+				  <li class="form__checkbox-item">
+				    <label class="form__checkbox-label">
+				    <input class="form__checkbox-input" type="checkbox" name="makita" checked>
+				    <span class="form__checkbox-indicator"></span>makita</label>
+				  </li>
+				  <li class="form__checkbox-item">
+				    <label class="form__checkbox-label">
+				    <input class="form__checkbox-input" type="checkbox" name="dewalt">
+				    <span class="form__checkbox-indicator"></span>dewalt</label>
+				  </li>
+				  <li class="form__checkbox-item">
+				    <label class="form__checkbox-label">
+				    <input class="form__checkbox-input" type="checkbox" name="hitachi">
+				    <span class="form__checkbox-indicator"></span>hitachi</label>
+				  </li>
+				</ul>
+		      </fieldset>
+		      <fieldset class="form__fieldset">
+				<legend class="form__legend">питание:</legend>
+				<ul class="form__radio-list">
+				  <li class="form__radio-item">
+				    <label class="form__radio-label">
+				    <input class="form__radio-input" type="radio" name="radio" checked>
+				    <span class="form__radio-indicator"></span>аккумуляторные</label>
+				  </li>
+				  <li class="form__radio-item">
+				    <label class="form__radio-label">
+				    <input class="form__radio-input" type="radio" name="radio">
+				    <span class="form__radio-indicator"></span>сетевые</label>
+		          </li>
+				</ul>
+   			  </fieldset>
+   			  <button class="form__button">показать</button>
+		    </form>
           </div>
           <div class="catalog__item-right">
             <div class="catalog__header-sort header-sort">
@@ -112,10 +182,10 @@
                 </ul>
                 <ul class="header-sort__list-arrows list-arrows">
                   <li class="list-arrows__item">
-                    <a class="list-arrows__link list-arrows__link--up" href="#"><span class="visually-hidden">по возрастанию</span></a>
+                    <a class="list-arrows__link list-arrows__link--up" href="#" aria-label="по возрастанию"></a>
                   </li>
                   <li class="list-arrows__item">
-                    <a class="list-arrows__link list-arrows__link--low" href="#"><span class="visually-hidden">по убыванию</span></a>
+                    <a class="list-arrows__link list-arrows__link--low" href="#" aria-label="по убыванию"></a>
                   </li>
                 </ul>
             </div>
@@ -360,16 +430,13 @@
             <div class="footer-bottom__social social">
               <ul class="social__list">
                 <li class="social__item">
-                  <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
-                  <span class="visually-hidden">Мы в контакте</span></a>
+                  <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Мы в контакте"></a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-                  <span class="visually-hidden">Мы в Фейсбуке</span></a>
+                  <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-                  <span class="visually-hidden">Мы в Инстаграме</span></a>
+                  <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" aria-label="Мы в Инстаграме"></a>
                 </li>
               </ul>
             </div>

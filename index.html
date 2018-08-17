@@ -10,9 +10,13 @@
       <div class="menu-top">
         <div class="menu-top__wrapper container">
           <a class="logo">
-            <img src="img/logo.svg" width="109.625" height="17.281" alt="Логотип">
+            <img src="img/logo.svg" width="109" height="17" alt="Логотип">
           </a>
-          <!-- здесь будет форма -->
+          <form class="menu-top__form form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="form__search-wrapper" for="search" aria-label="Поиск по сайту">
+              <input class="form__search" id="search" type="search" name="search" placeholder="Поиск:" required>
+            </label>
+          </form>
           <div class="menu-top__block-buyer block-buyer">
             <a class="block-buyer__link block-buyer__link--bookmarks" href="#">Закладки: 0</a>
             <a class="block-buyer__link block-buyer__link--basket" href="#">Корзина: 0</a>
@@ -94,12 +98,12 @@
             <div class="slider">
               <div class="slider__control-list">
                 <div class="slider__control-item">
-                  <button class="slider__btn-radio" type="button">Первый слайд</button>
-                  <button class="slider__btn-radio" type="button">Второй слайд</button>
+                  <button class="slider__btn-radio" type="button" aria-label="Первый слайд"></button>
+                  <button class="slider__btn-radio" type="button" aria-label="Второй слайд"></button>
 		        </div>
                 <div class="slider__control-item">
-                  <button class="slider-btn slide-btn--previous" type="button">Предыдущий слайд</button>
-                  <button class="slider-btn slide-btn--next" type="button">Следущий слайд</button>
+                  <button class="slider-btn slide-btn--previous" type="button" aria-label="Предыдущий слайд"></button>
+                  <button class="slider-btn slide-btn--next" type="button" aria-label="Следущий слайд"></button>
                 </div>
               </div>
               <ul class="slider__list">
@@ -376,16 +380,13 @@
             <div class="footer-bottom__social social">
               <ul class="social__list">
                 <li class="social__item">
-                  <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
-                  <span class="visually-hidden">Мы в контакте</span></a>
+                  <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Мы в контакте"></a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-                  <span class="visually-hidden">Мы в Фейсбуке</span></a>
+                  <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке"></a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-                  <span class="visually-hidden">Мы в Инстаграме</span></a>
+                  <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"  aria-label="Мы в Инстаграме"></a>
                 </li>
               </ul>
             </div>
@@ -412,11 +413,31 @@
       <button class="modal-close" type="button">Закрыть</button>
     </section>
 	<section class="modal">
-    <!-- здесь будет форма -->
-      <button class="modal-close" type="button">Закрыть</button>
+      <h2 class="modal-cart__title">Обратная связь</h2>
+      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal__form-wrapper">
+          <p class="modal__form-item">
+            <label for="name">Ваше имя:</label>
+            <input class="modal__form-input" id="name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p class="modal__form-item">
+            <label for="email">Ваш e-mail:</label>
+            <input class="modal__form-input" id="email" type="email" name="email" placeholder="email@example.com">
+          </p>
+          <p class="modal__form-item">
+            <label for="email-text">Текст письма:</label>
+            <textarea class="modal__form-textarea" id="email-text" name="email-text" placeholder="В свободной форме"></textarea>
+          </p>
+        </div>
+        <div class="modal__form-wrapper-btn">
+          <input class="btn modal__form-button" type="submit" value="Отправить">
+        </div>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
     <section class="map-popap">
-   	  <button class="modal-close" type="button">Закрыть</button>
+      <h2 class="modal-cart__title">Как до нас добраться</h2>
+   	  <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
   </body>
 </html>
