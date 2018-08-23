@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-  <body>
+  <body class="page-body">
     <header class="page-header">
       <div class="menu-top">
         <div class="menu-top__wrapper container">
@@ -25,7 +26,7 @@
           </div>
         </div>
       </div>
-      <div class="menu">
+      <div class="menu--inner">
         <div class="container">
           <div class="menu-user">
             <h1 class="menu-user__title">Интернет-магазин строительных материалов и инструментов для
@@ -79,7 +80,7 @@
     </header>
     <main class="page-main-inner">
       <div class="breadcrumbs container">
-        <ul class="breadcrumbs__list">
+        <ul class="breadcrumbs__list list-reset">
           <li class="breadcrumbs__item">
             <a class="breadcrumbs__link breadcrumbs__link--main" href="#"><span class="visually-hidden">Главная</span></a>
           </li>
@@ -124,7 +125,7 @@
               </fieldset>
               <fieldset class="form__fieldset">
                 <legend class="form__legend">Производители:</legend>
-                <ul class="form__checkbox-list">
+                <ul class="form__checkbox-list list-reset">
                   <li class="form__checkbox-item">
                     <label class="form__checkbox-label">
                       <input class="form__checkbox-input" type="checkbox" name="bosch" checked>
@@ -159,7 +160,7 @@
               </fieldset>
               <fieldset class="form__fieldset">
                 <legend class="form__legend">Питание:</legend>
-                <ul class="form__radio-list">
+                <ul class="form__radio-list list-reset">
                   <li class="form__radio-item">
                     <label class="form__radio-label">
                       <input class="form__radio-input" type="radio" name="radio" checked>
@@ -180,7 +181,7 @@
           <div class="catalog__item-right">
             <div class="catalog__header-sort header-sort">
               <h3 class="header-sort__title">Сортировка</h3>
-                <ul class="header-sort__list">
+                <ul class="header-sort__list list-reset">
                   <li class="header-sort__item">
                     <a class="header-sort__link header-sort__link--active" href="#">По цене</a>
                   </li>
@@ -193,14 +194,14 @@
                 </ul>
                 <ul class="header-sort__list-arrows list-arrows">
                   <li class="list-arrows__item">
-                    <a class="list-arrows__link list-arrows__link--up" href="#"><span class="visually-hidden">По возрастанию</span></a>
+                    <a class="list-arrows__link list-arrows__link--active" href="#"><span class="visually-hidden">По возрастанию</span></a>
                   </li>
                   <li class="list-arrows__item">
-                    <a class="list-arrows__link list-arrows__link--low" href="#"><span class="visually-hidden">По убыванию</span></a>
+                    <a class="list-arrows__link" href="#"><span class="visually-hidden">По убыванию</span></a>
                   </li>
                 </ul>
             </div>
-            <ul class="product-cart__list">
+            <ul class="product-cart__list list-reset">
               <li class="product-cart__item">
                 <div class="product-cart">
                   <h4 class="product-cart__title">
@@ -364,7 +365,7 @@
                 </div>
               </li>
             </ul>
-            <ul class="pagination-list">
+            <ul class="pagination-list list-reset">
               <li class="pagination__item">
                 <a class="pagination__link pagination__link--active" href="#">1</a>
               </li>
@@ -441,7 +442,7 @@
               <p class="footer-bottom__text">© 2010–2017 Компания «Техномарт» Все права защищены</p>
             </div>
             <div class="footer-bottom__social social">
-              <ul class="social__list">
+              <ul class="social__list list-reset">
                 <li class="social__item">
                   <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в контакте</span></a>
                 </li>
@@ -471,7 +472,7 @@
       <h2 class="modal-cart__title">Товар добавлен в корзину!</h2>
       <div class="modal-cart__links">
         <a class="btn modal-cart__link" href="#">Оформить заказ</a>
-        <a class="btn modal-cart__link-2" href="#">Продолжить покупки</a>
+        <a class="modal-cart__link-2" href="#">Продолжить покупки</a>
       </div>
       <button class="modal-close" type="button">Закрыть</button>
     </section>

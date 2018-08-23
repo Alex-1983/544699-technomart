@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-  <body>
+  <body class="page-body">
     <header class="page-header">
       <div class="menu-top">
         <div class="menu-top__wrapper container">
@@ -107,7 +108,7 @@
                   <button class="slider-btn slide-btn--next" type="button"><span class="visually-hidden">Следующий слайд</span></button>
                 </div>
               </div>
-              <ul class="slider__list">
+              <ul class="slider__list list-reset">
                 <li class="slider__item">
                   <div class="slider__header">
                     <h4 class="slider__title">Дрели</h4>
@@ -146,7 +147,7 @@
           <h2 class="header-block__title">Популярные товары:</h2>
           <a class="btn header-block__link" href="#">Все популярные товары</a>
         </div>
-        <ul class="product-cart__list">
+        <ul class="product-cart__list list-reset">
           <li class="product-cart__item">
             <div class="product-cart">
               <h3 class="product-cart__title">
@@ -226,7 +227,7 @@
           <h2 class="header-block__title">Популярные производители:</h2>
           <a class="btn header-block__link" href="#">Все производители</a>
         </div>
-        <ul class="manufacturers__list">
+        <ul class="manufacturers__list list-reset">
           <li class="manufacturers__item">
             <a class="manufacturers__link-img" href="#">
               <img class="manufacturer__img" src="img/bosch-logo.png" width="126" height="37" alt="boch">
@@ -274,7 +275,7 @@
           <h2 class="service__title">Сервисы</h2>
           <p class="service__text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="service__slider">
-            <ul class="service-tab__list">
+            <ul class="service-tab__list list-reset">
               <li class="service-tab__item">
                 <a class="service-tab__link" href="#delivery">Доставка</a>
               </li>
@@ -381,7 +382,7 @@
               <p class="footer-bottom__text">© 2010–2017 Компания «Техномарт» Все права защищены</p>
             </div>
             <div class="footer-bottom__social social">
-              <ul class="social__list">
+              <ul class="social__list list-reset">
                 <li class="social__item">
                   <a class="social__link social__link--vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в контакте</span></a>
                 </li>
@@ -411,24 +412,24 @@
       <h2 class="modal-cart__title">Товар добавлен в корзину!</h2>
       <div class="modal-cart__links">
         <a class="btn modal-cart__link" href="#">Оформить заказ</a>
-        <a class="btn modal-cart__link-2" href="#">Продолжить покупки</a>
+        <a class="modal-cart__link-2" href="#">Продолжить покупки</a>
       </div>
-      <button class="modal-close" type="button">Закрыть</button>
+      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
     <section class="modal">
-      <h2 class="modal-cart__title">Обратная связь</h2>
+      <h2 class="visually-hidden">Обратная связь</h2>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="modal__form-wrapper">
           <p class="modal__form-item">
-            <label for="name">Ваше имя:</label>
+            <label class="modal__form-label" for="name">Ваше имя:</label>
             <input class="modal__form-input" id="name" type="text" name="name" placeholder="Имя Фамилия">
           </p>
           <p class="modal__form-item">
-            <label for="email">Ваш e-mail:</label>
+            <label class="modal__form-label" for="email">Ваш e-mail:</label>
             <input class="modal__form-input" id="email" type="email" name="email" placeholder="email@example.com">
           </p>
           <p class="modal__form-item">
-            <label for="email-text">Текст письма:</label>
+            <label class="modal__form-label" for="email-text">Текст письма:</label>
             <textarea class="modal__form-textarea" id="email-text" name="email-text" placeholder="В свободной форме"></textarea>
           </p>
         </div>
@@ -439,9 +440,9 @@
       <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
     <section class="map-popap">
-      <h2 class="modal-cart__title">Как до нас добраться</h2>
-      <p>
-        <img src="img/map.jpg" width="940" height="448" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p class="map-popap__wrapper-img">
+        <img class="map-popap__img" src="img/map.jpg" width="940" height="448" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </p>
       <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
