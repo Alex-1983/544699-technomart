@@ -1,35 +1,35 @@
 @font-face {
-  font-family: 'cuprumregular';
+  font-family: 'cuprum';
   src: url('../fonts/cuprum-regular-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'cuprumitalic';
+  font-family: 'cuprum';
   src: url('../fonts/cuprum-italic-webfont.woff2') format('woff2');
   font-weight: normal;
-  font-style: normal;
+  font-style: italic;
 }
 
 @font-face {
-  font-family: 'cuprumbold';
+  font-family: 'cuprum';
   src: url('../fonts/cuprum-bold-webfont.woff2') format('woff2');
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'pt_sansbold';
-  src: url('../fonts/pts75f-webfont.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'pt_sansregular';
+  font-family: 'pt_sans';
   src: url('../fonts/pts55f-webfont.woff2') format('woff2');
   font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pt_sans';
+  src: url('../fonts/pts75f-webfont.woff2') format('woff2');
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -39,7 +39,7 @@
 
   min-width: 960px;
 
-  font-family: 'cuprumregular', Arial, sans-serif;
+  font-family: 'cuprum', Arial, sans-serif;
   font-size: 13px;
   line-height: 14px;
   color: #000000;
@@ -127,6 +127,7 @@ a {
 }
 
 .form__search {
+  font-family: inherit;
   font-size: 17px;
   line-height: 18px;
   color: #000000;
@@ -184,7 +185,7 @@ a {
   margin: 0;
   padding: 0;
 
-  font-family: 'cuprumitalic', Arial, sans-serif;
+  font-style: italic;
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
@@ -298,7 +299,7 @@ a {
   margin: 0;
   padding: 0;
 
-  font-family: 'cuprumbold', Arial, sans-serif;
+  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
@@ -352,7 +353,7 @@ a {
   margin: 0;
   padding: 0;
 
-  font-family: 'cuprumbold', Arial, sans-serif;
+  font-weight: 700;
   font-size: 36px;
   line-height: 36px;
   text-transform: uppercase;
@@ -362,7 +363,7 @@ a {
   margin: 0;
   padding: 0;
 
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
 }
 
@@ -396,7 +397,8 @@ a {
 }
 
 .product-cart__title {
-  font-family: 'pt_sansbold', Arial, sans-serif;
+  font-family: 'pt_sans', Arial, sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 20px;
 }
@@ -406,7 +408,8 @@ a {
 }
 
 .product-cart__price-wrapper {
-  font-family: 'pt_sansbold', Arial, sans-serif;
+  font-family: 'pt_sans', Arial, sans-serif;
+  font-weight: 700;
   font-size: 17px;
   line-height: 18px;
 }
@@ -506,13 +509,13 @@ a {
   margin: 0;
   padding: 0;
 
-  font-family: 'pt_sansregular', Arial, sans-serif;
+  font-family: 'pt_sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
 
 .service-tab__link {
-  font-family: 'cuprumbold', Arial, sans-serif;
+  font-weight: 700;
   font-size: 21px;
   line-height: 30px;
   color: #ffffff;
@@ -702,7 +705,7 @@ a {
 
 .modal__form-input::placeholder
 .modal__form-textarea::placeholder {
-  font-family: 'pt_sansregular', Arial, sans-serif;
+  font-family: 'pt_sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
@@ -784,7 +787,7 @@ a {
 }
 
 .breadcrumbs__link {
-  font-family: 'pt_sansregular', Arial, sans-serif;
+  font-family: 'pt_sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
@@ -808,7 +811,7 @@ a {
 }
 
 .catalog__header-title {
-  font-family: 'pt_sansregular', Arial, sans-serif;
+  font-family: 'pt_sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
@@ -820,7 +823,8 @@ a {
 }
 
 .form__legend {
-  font-family: 'pt_sansbold', Arial, sans-serif;
+  font-family: 'pt_sans', Arial, sans-serif;
+  font-weight: 700;
   font-size: 17px;
   line-height: 30px;
   color: #000000;
@@ -849,7 +853,7 @@ a {
 .range-filter__input {
   width: 95px;
 
-  font-family: 'pt_sansregular', Arial, sans-serif;
+  font-family: 'pt_sans', Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   text-align: center;
@@ -861,8 +865,8 @@ a {
 
 .form__checkbox-label,
 .form__radio-label {
-  font-family: 'pt_sansregular', Arial, sans-serif;
-  font-size: 17px;
+  font-family: 'pt_sans', Arial, sans-serif;
+  font-size: 15px;
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
@@ -870,13 +874,14 @@ a {
 }
 
 .form__button {
+  line-height: 18px;
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
 .header-sort__link {
-  font-family: 'pt_sansregular', Arial, sans-serif;
+  font-family: 'pt_sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #c4c1bb;
@@ -958,7 +963,7 @@ a {
   display: block;
   padding: 10px 14px;
 
-  font-family: 'pt_sansregular', Arial, sans-serif;
+  font-family: 'pt_sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
@@ -1006,7 +1011,7 @@ a {
   margin: 0;
   padding: 0;
 
-  font-family: 'pt_sansregular', Arial, sans-serif;
+  font-family: 'pt_sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
