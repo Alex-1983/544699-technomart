@@ -320,13 +320,14 @@ a {
 
 .promo-block {
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 
   color: #ffffff;
 }
 
 .promo-block__wrapper {
-  margin: 0 -10px;
+  margin: -10px;
+  margin-bottom: 10px;
   padding: 0;
 
   display: flex;
@@ -337,15 +338,14 @@ a {
 }
 
 .promo-block__item {
-  margin-bottom: 20px;
-  padding: 0 10px;
+  padding: 10px;
 }
 
 .promo-card {
   position: relative;
 
   width: 300px;
-  height: 125px;
+  height: 123px;
 }
 
 .promo-card--material {
@@ -622,7 +622,7 @@ a {
 }
 
 .manufacturers {
-  padding-bottom: 65px;
+  margin-bottom: 65px;
 }
 
 .manufacturers__list {
