@@ -21,7 +21,7 @@
           </form>
           <div class="menu-top__block-buyer block-buyer">
             <a class="block-buyer__link block-buyer__link--bookmarks" href="#">Закладки: 0</a>
-            <a class="block-buyer__link block-buyer__link--basket" href="#">Корзина: 0</a>
+            <a class="block-buyer__link block-buyer__link--red" href="#">Корзина: 10</a>
             <a class="block-buyer__link block-buyer__link--order" href="#">Оформить заказ</a>
           </div>
         </div>
@@ -29,7 +29,7 @@
       <div class="menu--inner">
         <div class="container">
           <div class="menu-user">
-            <h1 class="menu-user__title">Интернет-магазин строительных материалов и инструментов для
+            <h1 class="menu-user__title">Интернет-магазин строительных материалов<br>и инструментов для
             ремонта</h1>
             <div class="menu-user__contact">
               <a class="menu-user__phone" href="tel:+78125550555;">+7 (812) 555-05-55</a>
@@ -37,8 +37,12 @@
             </div>
             <div class="menu-user__account-inner account-inner">
               <div class="account-inner__name account-name">
-                <a class="account-name__link account-name__link--name" href="#">Равшан Джамшутович</a>
-                <a class="account-name__link account-name__link--exit"><span class="visually-hidden">Выход</span></a>
+                <a class="account-name__link account-name__link--name" href="#">Равшан Джамшутович
+                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"><path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
+                </a>
+                <a class="account-name__link account-name__link--exit"><span class="visually-hidden">Выход</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g fill="#c5c5c5"><path d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg>
+                </a>
               </div>
               <ul class="account-inner__personal acount-personal">
                 <li class="acount-personal__item">
@@ -128,31 +132,31 @@
                 <ul class="form__checkbox-list list-reset">
                   <li class="form__checkbox-item">
                     <label class="form__checkbox-label">
-                      <input class="form__checkbox-input" type="checkbox" name="bosch" checked>
+                      <input class="visually-hidden form__checkbox-input" type="checkbox" name="bosch" checked>
                       Bosch
                     </label>
                   </li>
                   <li class="form__checkbox-item">
                     <label class="form__checkbox-label">
-                      <input class="form__checkbox-input" type="checkbox" name="интерскол">
+                      <input class="visually-hidden form__checkbox-input" type="checkbox" name="интерскол">
                       Интерскол
                     </label>
                   </li>
                   <li class="form__checkbox-item">
                     <label class="form__checkbox-label">
-                      <input class="form__checkbox-input" type="checkbox" name="makita" checked>
+                      <input class="visually-hidden form__checkbox-input" type="checkbox" name="makita" checked>
                       Makita
                     </label>
                   </li>
                   <li class="form__checkbox-item">
                     <label class="form__checkbox-label">
-                      <input class="form__checkbox-input" type="checkbox" name="dewalt">
+                      <input class="visually-hidden form__checkbox-input" type="checkbox" name="dewalt">
                       Dewalt
                     </label>
                   </li>
                   <li class="form__checkbox-item">
                     <label class="form__checkbox-label">
-                      <input class="form__checkbox-input" type="checkbox" name="hitachi">
+                      <input class="visually-hidden form__checkbox-input" type="checkbox" name="hitachi">
                       Hitachi
                     </label>
                   </li>
@@ -163,13 +167,13 @@
                 <ul class="form__radio-list list-reset">
                   <li class="form__radio-item">
                     <label class="form__radio-label">
-                      <input class="form__radio-input" type="radio" name="radio" checked>
+                      <input class="visually-hidden form__radio-input" type="radio" name="radio" checked>
                       Аккумуляторные
                     </label>
                   </li>
                   <li class="form__radio-item">
                     <label class="form__radio-label">
-                      <input class="form__radio-input" type="radio" name="radio">
+                      <input class="visually-hidden form__radio-input" type="radio" name="radio">
                       Сетевые
                     </label>
                   </li>
@@ -197,7 +201,7 @@
                     <a class="list-arrows__link list-arrows__link--active" href="#"><span class="visually-hidden">По возрастанию</span></a>
                   </li>
                   <li class="list-arrows__item">
-                    <a class="list-arrows__link" href="#"><span class="visually-hidden">По убыванию</span></a>
+                    <a class="list-arrows__link list-arrows__link--low" href="#"><span class="visually-hidden">По убыванию</span></a>
                   </li>
                 </ul>
             </div>
@@ -394,7 +398,7 @@
           <div class="footer-top__wrapper">
             <div class="footer-top__contacts">
               <a class="logo logo--bottom" href="index.html">
-                <img src="img/logo.svg" width="109" height="17" alt="Логотип">
+                <img src="img/logo-bottom.svg" width="137" height="22" alt="Логотип">
               </a>
               <p class="footer-top__text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
               <span class="footer-top__phone">+7 (812) 555-05-55</span>
@@ -459,7 +463,7 @@
                 <span>Обратная связь:</span>
                 <a class="feedback__link" href="#">mail@htmlacademy.ru</a>
               </p>
-              <p class="feedback__text">
+              <p class="feedback__text feedback__text--right">
                 <span>Разработано —</span>
                 <a class="feedback__link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
               </p>
