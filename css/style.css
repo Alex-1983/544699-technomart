@@ -1161,7 +1161,7 @@ a {
 .service-tab__link:focus {
   color: #32425c;
   background-color: #ffffff;
-  border: none;
+  border-color: transparent;
 }
 
 .service-tab__link:focus {
@@ -1770,14 +1770,14 @@ a {
   text-decoration: underline;
 }
 
-.acount-personal__link--2 {
+.acount-personal__item:not(:first-child) .acount-personal__link {
   position: relative;
 
   margin-left: 15px;
   padding-left: 16px;
 }
 
-.acount-personal__link--2::before {
+.acount-personal__item:not(:first-child) .acount-personal__link::before {
   content: "";
   position: absolute;
   top: 6px;
@@ -1794,7 +1794,6 @@ a {
 .acount-personal__link:hover,
 .acount-personal__link:focus {
   color: #ee3643;
-  border-bottom: 1px solid #f0bcc0;
 }
 
 .acount-personal__link:focus {
@@ -1808,8 +1807,6 @@ a {
 .acount-personal__link:active {
   color: #ced3d8;
   color: rgba(50, 66, 92, 0.3);
-  border-bottom: 1px solid #ced3d8;
-  border-bottom: 1px solid rgba(50, 66, 92, 0.3);
 }
 
 .breadcrumbs {
