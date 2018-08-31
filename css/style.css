@@ -414,8 +414,7 @@ a {
 }
 
 .account__link:active {
-  color: #cacaca;
-  color: rgba(0, 0, 0, 0.3);
+ color: rgba(0, 0, 0, 0.3);
 }
 
 .account__link--login {
@@ -491,7 +490,6 @@ a {
 }
 
 .site-list__link:active {
-  color: #a1a4a8;
   color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
 }
@@ -587,7 +585,6 @@ a {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
-  background-color: #e5e5e5;
   background-color: rgba(0, 0, 0, 0.1);
   text-align: center;
   border-radius: 3px;
@@ -597,7 +594,6 @@ a {
 
 .promo-card__link:hover,
 .promo-card__link:focus {
-  background-color: #cccccc;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -606,7 +602,6 @@ a {
 }
 
 .promo-card__link:active {
-  background-color: #b2b2b2;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1022,7 +1017,6 @@ a {
 }
 
 .actions__link--bookmarks:active {
-  color: #d0d2d6;
   color: rgba(50, 60, 92, 0.3);
   border: 3px solid #c1c6ce;
 }
@@ -1439,7 +1433,6 @@ a {
 }
 
 .footer-menu__link:active {
-  color: #99a0ab;
   color: rgba(241, 245, 247, 0.5);
   border-bottom: none;
 }
@@ -1476,7 +1469,6 @@ a {
 }
 
 .footer-menu__link--lower:active {
-  color: #a6906e;
   color: rgba(255, 209, 128, 0.5);
   border-bottom: none;
 }
@@ -1801,11 +1793,9 @@ a {
 }
 
 .account-name__link:active {
-  color: #cacaca;
   color: rgba(0, 0, 0, 0.3);
 }
 .acount-personal__link:active {
-  color: #ced3d8;
   color: rgba(50, 66, 92, 0.3);
 }
 
@@ -2096,7 +2086,6 @@ a {
   font-family: 'pt_sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  color: #c4c1bb;
   color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
   border-bottom: 1px dotted #ee3643;
