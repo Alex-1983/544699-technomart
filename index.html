@@ -157,7 +157,7 @@
                 <a class="product-cart__link" href="#">Перфоратор BOSCH BFG 9000</a>
               </h3>
               <div class="product-cart__image">
-                <img src="img/model9000.jpg" alt="Фотография Bosch BFG 9000" width="218" height="170">
+                <img class="product-cart__img" src="img/model9000.jpg" alt="Фотография Bosch BFG 9000" width="218" height="170">
               </div>
               <div class="product-cart__price-wrapper">
                 <span class="product-cart__discount">32500 Р.</span>
@@ -175,7 +175,7 @@
                 <a class="product-cart__link" href="#">Перфоратор BOSCH BFG 3000</a>
               </h3>
               <div class="product-cart__image">
-                <img src="img/model3000.jpg" alt="Фотография Bosch BFG 3000" width="218" height="170">
+                <img class="product-cart__img" src="img/model3000.jpg" alt="Фотография Bosch BFG 3000" width="218" height="170">
               </div>
               <div class="product-cart__price-wrapper">
                 <span class="product-cart__discount">22500 Р.</span>
@@ -193,7 +193,7 @@
                   <a class="product-cart__link" href="#">Перфоратор BOSCH BFG 6000</a>
                 </h3>
                 <div class="product-cart__image">
-                  <img src="img/model6000.jpg" alt="Фотография Bosch BFG 6000" width="218" height="170">
+                  <img class="product-cart__img" src="img/model6000.jpg" alt="Фотография Bosch BFG 6000" width="218" height="170">
                 </div>
                 <div class="product-cart__price-wrapper">
                   <span class="product-cart__discount">30500 Р.</span>
@@ -212,7 +212,7 @@
                 <a class="product-cart__link" href="#">Перфоратор BOSCH BFG 2000</a>
               </h3>
               <div class="product-cart__image">
-                <img src="img/model2000.jpg" alt="Фотография Bosch BFG 2000" width="218" height="170">
+                <img class="product-cart__img" src="img/model2000.jpg" alt="Фотография Bosch BFG 2000" width="218" height="170">
               </div>
               <div class="product-cart__price-wrapper">
                 <span class="product-cart__price">12500 Р.</span>
@@ -411,43 +411,44 @@
         </div>
       </div>
     </footer>
-    <section class="modal-cart">
+    <section class="modal modal-cart">
       <h2 class="modal-cart__title">Товар добавлен в корзину!</h2>
       <div class="modal-cart__links">
         <a class="btn modal-cart__link" href="#">Оформить заказ</a>
-        <a class="modal-cart__link-2" href="#">Продолжить покупки</a>
+        <a class="modal-cart__link modal-cart__link-2" href="#">Продолжить покупки</a>
       </div>
       <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
-    <section class="modal">
+    <section class="modal write-us">
       <h2 class="visually-hidden">Обратная связь</h2>
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="modal__form-wrapper">
-          <p class="modal__form-item">
-            <label class="modal__form-label" for="name">Ваше имя:</label>
-            <input class="modal__form-input" id="name" type="text" name="name" placeholder="Имя Фамилия">
+      <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="write-us__wrapper">
+          <p class="write-us__item">
+            <label class="write-us__label" for="name">Ваше имя:</label>
+            <input class="write-us__form-control" id="name" type="text" name="name" placeholder="Имя Фамилия">
           </p>
-          <p class="modal__form-item">
-            <label class="modal__form-label" for="email">Ваш e-mail:</label>
-            <input class="modal__form-input" id="email" type="email" name="email" placeholder="email@example.com">
+          <p class="write-us__item">
+            <label class="write-us__label" for="email">Ваш e-mail:</label>
+            <input class="write-us__form-control" id="email" type="email" name="email" placeholder="email@example.com">
           </p>
-          <p class="modal__form-item">
-            <label class="modal__form-label" for="email-text">Текст письма:</label>
-            <textarea class="modal__form-textarea" id="email-text" name="email-text" placeholder="В свободной форме"></textarea>
+          <p class="write-us__item write-us__item--texterea">
+            <label class="write-us__label" for="email-text">Текст письма:</label>
+            <textarea class="write-us__form-control" id="email-text" name="email-text" placeholder="В свободной форме"></textarea>
           </p>
         </div>
-        <div class="modal__form-wrapper-btn">
-          <button class="btn modal__form-button" type="submit">Отправить</button>
+        <div class="write-us__wrapper-btn">
+          <button class="btn write-us__button" type="submit">Отправить</button>
         </div>
       </form>
       <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
-    <section class="map-popap">
+    <section class="modal map-popap">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <p class="map-popap__wrapper-img">
         <img class="map-popap__img" src="img/map.jpg" width="940" height="448" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </p>
       <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
+    <div class="modal-overlay"></div>
   </body>
 </html>
