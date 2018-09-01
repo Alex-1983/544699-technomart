@@ -619,7 +619,6 @@ a {
   position: absolute;
   bottom: 30px;
   left: 287px;
-  z-index: 1000;
 
   width: 50px;
   height: 20px;
@@ -827,8 +826,6 @@ a {
 
   width: 60px;
   height: 59px;
-
-  z-index: 1000;
 }
 
 .product-cart__title {
@@ -1125,7 +1122,7 @@ a {
   width: 240px;
 }
 
-.service-tab__list:before {
+.service-tab__list::before {
   content: "";
   position: absolute;
   top: -25%;
@@ -1313,7 +1310,7 @@ a {
   color: #000000;
 }
 
-.partners-list__item:before {
+.partners-list__item::before {
   content: "";
   position: absolute;
   top: 7px;
@@ -1816,8 +1813,7 @@ a {
 .catalog-title {
   margin: 0;
   margin-bottom: 20px;
-  padding: 27px 0 29px;
-  padding-left: 28px;
+  padding: 27px 0 29px 28px;
 
   width: 100%;
 
@@ -1972,7 +1968,7 @@ a {
   position: relative;
 }
 
-.filter__checkbox-input + .filter__checkbox-label::before {
+.filter__checkbox-label::before {
   content: "";
   position: absolute;
   left: -34px;
@@ -2004,7 +2000,7 @@ a {
   margin-bottom: 77px;
 }
 
-.filter__radio-input + .filter__radio-label:before {
+.filter__radio-label::before {
   content: "";
   position: absolute;
   left: -35px;
@@ -2017,8 +2013,8 @@ a {
   border: 4px solid #c5c5c5;
 }
 
-.filter__radio-input + .filter__radio-label:hover:before,
-.filter__radio-input + .filter__radio-label:focus:before {
+.filter__radio-label:hover::before,
+.filter__radio-label:focus::before {
   border: 4px solid #b5b5b5;
 }
 
@@ -2181,7 +2177,7 @@ a {
   transform: rotate(180deg);
 }
 
-.list-arrows__link:hover {
+.list-arrows__link::hover {
   border-color: transparent transparent #000000 transparent;
 }
 
@@ -2439,8 +2435,8 @@ a {
   cursor: pointer;
 }
 
-.modal-close:before,
-.modal-close:after {
+.modal-close::before,
+.modal-close::after {
   content: "";
   position: absolute;
   top: 10px;
@@ -2452,15 +2448,15 @@ a {
   background-color: #ee3643;
 }
 
-.modal-close:before {
+.modal-close::before {
   transform: rotate(135deg);
 }
 
-.modal-close:after {
+.modal-close::after {
   transform: rotate(-135deg);
 }
 
-.map-popap {
+.map-popup {
   top: 120px;
   left: 50%;
   display: none;
