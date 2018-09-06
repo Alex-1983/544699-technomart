@@ -2,9 +2,9 @@ var link = document.querySelector(".company__link-write");
 var popup = document.querySelector(".write-us");
 var close = popup.querySelector(".modal-close");
 var form = popup.querySelector(".write-us__form");
-var login = popup.querySelector(".write-us__label--login");
-var email = popup.querySelector(".write-us__label--email");
-var textarea = popup.querySelector(".write-us__label--textarea");
+var login = popup.querySelector(".write-us__login");
+var email = popup.querySelector(".write-us__email");
+var textarea = popup.querySelector(".write-us__textarea");
 var overlay = document.querySelector(".modal-overlay");
 
 var isStorageSupport = true;
