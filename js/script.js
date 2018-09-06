@@ -2,9 +2,9 @@ var link = document.querySelector(".company__link-write");
 var popup = document.querySelector(".write-us");
 var close = popup.querySelector(".modal-close");
 var form = popup.querySelector(".write-us__form");
-var login = popup.querySelector("[name=login]");
-var email = popup.querySelector("[name=email]");
-var textarea = popup.querySelector("[name=textarea]");
+var login = popup.querySelector(".write-us__label--login");
+var email = popup.querySelector(".write-us__label--email");
+var textarea = popup.querySelector(".write-us__label--textarea");
 var overlay = document.querySelector(".modal-overlay");
 
 var isStorageSupport = true;
@@ -54,7 +54,7 @@ form.addEventListener("submit", function (evt) {
   } else {
     if (isStorageSupport) {
       localStorage.setItem("login", login.value);
-      localStorage.etItem("email", email.value);
+      localStorage.setItem("email", email.value);
     }
   }
 });
@@ -87,8 +87,8 @@ var mapClose = mapPopup.querySelector(".modal-close");
   });
 
   window.addEventListener("keydown", function (evt) {
-    evt.preventDefault();
     if (evt.keyCode === 27) {
+      evt.preventDefault();
       if (mapPopup.classList.contains("modal-show-map")) {
         mapPopup.classList.remove("modal-show-map");
         overlay.classList.remove("overlay-show");

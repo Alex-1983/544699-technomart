@@ -326,7 +326,7 @@
             <a class="company__map" href="#">
               <img src="img/mini-map.jpg" width="300" height="158" alt="карта">
             </a>
-            <a class="btn company__link-write" href="#">Заблудились? Напишите нам!</a>
+            <a class="btn company__link-write" href="login.html">Заблудились? Напишите нам!</a>
           </div>
         </div>
       </section>
@@ -421,19 +421,19 @@
     </section>
     <section class="modal write-us">
       <h2 class="visually-hidden">Обратная связь</h2>
-      <form class="write-us__form" action="https://echo.htmlacademy.ru" method="#">
+      <form class="write-us__form" action="https://echo.htmlacademy.ru" method="post">
         <div class="write-us__wrapper">
           <p class="write-us__item">
-            <label class="write-us__label" for="name">Ваше имя:</label>
-            <input class="write-us__form-control" id="name" type="text" name="login" placeholder="Имя Фамилия">
+            <label class="write-us__label write-us__label--login" for="login">Ваше имя:</label>
+            <input class="write-us__form-control" id="login" type="text" name="login" placeholder="Имя Фамилия">
           </p>
           <p class="write-us__item">
-            <label class="write-us__label" for="email">Ваш e-mail:</label>
+            <label class="write-us__label write-us__label--email" for="email">Ваш e-mail:</label>
             <input class="write-us__form-control" id="email" type="email" name="email" placeholder="email@example.com">
           </p>
           <p class="write-us__item write-us__item--texterea">
-            <label class="write-us__label" for="email-text">Текст письма:</label>
-            <textarea class="write-us__form-control" id="email-text" name="textarea" placeholder="В свободной форме"></textarea>
+            <label class="write-us__label write-us__label--textarea" for="textarea">Текст письма:</label>
+            <textarea class="write-us__form-control" id="textarea" name="textarea" placeholder="В свободной форме"></textarea>
           </p>
         </div>
         <div class="write-us__wrapper-btn">
