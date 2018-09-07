@@ -610,9 +610,12 @@ a {
   height: 266px;
 }
 
-/*временно*/
-.slider__item:last-child {
+.slider__item {
   display: none;
+}
+
+.slider__item-active {
+  display: block;
 }
 
 .slider__radio-wrapper {
@@ -1154,7 +1157,7 @@ a {
   cursor: pointer;
 }
 
-.service-tab__link:focus {
+.service-tab__link-active {
   color: #32425c;
   background-color: #ffffff;
   border-color: transparent;
@@ -1162,16 +1165,6 @@ a {
 
 .service-tab__link:focus {
   outline: none;
-}
-
-.service-tab__link:active {
-  color: #ffffff;
-  background-color: #293449;
-}
-
-.service__slide--warranty ,
-.service__slide--credit {
-	display: none;
 }
 
 .service__slides {
@@ -1249,6 +1242,14 @@ a {
   width: 468px;
   height: 243px;
   background-repeat: no-repeat;
+}
+
+.service__slide {
+	display: none;
+}
+
+.service__slide-active {
+	display: block;
 }
 
 .company {

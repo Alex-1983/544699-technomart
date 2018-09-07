@@ -23,7 +23,6 @@ link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
   overlay.classList.add("overlay-show");
-
   if (storageLogin) {
     login.value = storageLogin;
     textarea.focus();
@@ -96,6 +95,94 @@ var mapClose = mapPopup.querySelector(".modal-close");
     }
 });
 
+var cartBuy = document.querySelectorAll(".actions__link--buy");
+var cartPopup = document.querySelector(".modal-cart");
+var cartClose = cartPopup.querySelector(".modal-close");
 
+for (var i = 0; i < cartBuy.length; i++) {
+  cartBuy[i].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    cartPopup.classList.add("modal-show-cart");
+    overlay.classList.add("overlay-show");
+  });
+};
 
+cartClose.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  cartPopup.classList.remove("modal-show-cart");
+  overlay.classList.remove("overlay-show");
+});
 
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (cartPopup.classList.contains("modal-show-cart")) {
+      cartPopup.classList.remove("modal-show-cart");
+      overlay.classList.remove("overlay-show");
+    }
+  }
+});
+
+var tabLink = document.querySelectorAll(".service-tab__link");
+var tabSlide = document.querySelectorAll(".service__slide");
+var j, h, k;
+
+for (i = 0; i < tabLink.length; ++i) {
+	tabLink[i].addEventListener("click", function (event) {
+		event.preventDefault(event);
+        for (j = 0; j < tabLink.length; ++j) {
+            tabLink[j].classList.remove("service-tab__link-active");
+        }
+        for (h = 0; h < tabLink.length; ++h) {
+            if (tabLink[h] == this) {
+                tabLink[h].classList.add("service-tab__link-active");
+                for (k = 0; k < tabSlide.length; ++k) {
+                    tabSlide[k].classList.remove("service__slide-active");
+                }
+                tabSlide[h].classList.add("service__slide-active");
+            }
+        }
+	})
+}
+
+var slide = document.querySelectorAll(".slider__item");
+
+var countSlide = slide.length;
+
+var next = document.querySelector(".slide-btn--next");
+
+var previous = document.querySelector(".slide-btn--previous");
+
+var radioSlide = document.querySelectorAll(".slider__btn-radio");
+
+var currentSlide = 0;
+
+if (slide) {
+
+  next.addEventListener("click", function (evt) {
+    if (currentSlide < countSlide-1) {
+      evt.preventDefault();
+      currentSlide = currentSlide + 1;
+      showSlide(currentSlide);
+    };
+  });
+
+  previous.addEventListener("click", function (evt) {
+    if (currentSlide > 0) {
+      evt.preventDefault();
+      currentSlide = currentSlide - 1;
+      showSlide(currentSlide);
+    };
+  });
+
+  function showSlide(currentSlide) {
+    for (var k = 0; k < countSlide; k++) {
+    slide[k].classList.remove("slider__item-active");
+    radioSlide[k].classList.add("slider__btn-radio--active");
+    };
+
+    slide[currentSlide].classList.add("slider__item-active");
+    radioSlide[currentSlide].classList.remove("slider__btn-radio--active");
+  };
+
+};
