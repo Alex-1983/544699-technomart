@@ -2,7 +2,7 @@ var link = document.querySelector(".company__link-write");
 var popup = document.querySelector(".write-us");
 var overlay = document.querySelector(".modal-overlay");
 
-if(popup) {
+if (popup) {
 var popupClose = popup.querySelector(".modal-close");
 var form = popup.querySelector(".write-us__form");
 var login = popup.querySelector(".write-us__login");
@@ -169,7 +169,6 @@ var radioSlide = document.querySelectorAll(".slider__btn-radio");
 var currentSlide = 0;
 
 if (slide) {
-
   next.addEventListener("click", function (evt) {
     if (currentSlide < countSlide-1) {
       evt.preventDefault();
