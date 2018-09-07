@@ -1,11 +1,13 @@
 var link = document.querySelector(".company__link-write");
 var popup = document.querySelector(".write-us");
-var close = popup.querySelector(".modal-close");
+var overlay = document.querySelector(".modal-overlay");
+
+if(popup) {
+var popupClose = popup.querySelector(".modal-close");
 var form = popup.querySelector(".write-us__form");
 var login = popup.querySelector(".write-us__login");
 var email = popup.querySelector(".write-us__email");
 var textarea = popup.querySelector(".write-us__textarea");
-var overlay = document.querySelector(".modal-overlay");
 
 var isStorageSupport = true;
 var storageLogin = "";
@@ -37,7 +39,7 @@ link.addEventListener("click", function (evt) {
 
 });
 
-close.addEventListener("click", function (evt) {
+popupClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.remove("modal-show");
   popup.classList.remove("modal-error");
@@ -69,9 +71,13 @@ window.addEventListener("keydown", function (evt) {
     }
 });
 
+};
+
 var mapLink = document.querySelector(".company__map");
 var mapPopup = document.querySelector(".map-popup");
-var mapClose = mapPopup.querySelector(".modal-close");
+
+if (mapPopup) {
+  var mapClose = mapPopup.querySelector(".modal-close");
 
   mapLink.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -95,9 +101,13 @@ var mapClose = mapPopup.querySelector(".modal-close");
     }
 });
 
+};
+
 var cartBuy = document.querySelectorAll(".actions__link--buy");
 var cartPopup = document.querySelector(".modal-cart");
 var cartClose = cartPopup.querySelector(".modal-close");
+
+if(cartPopup) {
 
 for (var i = 0; i < cartBuy.length; i++) {
   cartBuy[i].addEventListener("click", function (evt) {
@@ -118,14 +128,18 @@ window.addEventListener("keydown", function(evt) {
     evt.preventDefault();
     if (cartPopup.classList.contains("modal-show-cart")) {
       cartPopup.classList.remove("modal-show-cart");
-      overlay.classList.remove("overlay-show");
+     overlay.classList.remove("overlay-show");
     }
   }
 });
 
+};
+
 var tabLink = document.querySelectorAll(".service-tab__link");
 var tabSlide = document.querySelectorAll(".service__slide");
 var j, h, k;
+
+if(tabSlide) {
 
 for (i = 0; i < tabLink.length; ++i) {
 	tabLink[i].addEventListener("click", function (event) {
@@ -143,18 +157,15 @@ for (i = 0; i < tabLink.length; ++i) {
             }
         }
 	})
-}
+};
+
+};
 
 var slide = document.querySelectorAll(".slider__item");
-
 var countSlide = slide.length;
-
 var next = document.querySelector(".slide-btn--next");
-
 var previous = document.querySelector(".slide-btn--previous");
-
 var radioSlide = document.querySelectorAll(".slider__btn-radio");
-
 var currentSlide = 0;
 
 if (slide) {
