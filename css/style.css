@@ -454,14 +454,14 @@ a {
 .account__link--login {
   position: relative;
 
-  margin-right: 11px;
-  padding-left: 46px;
+  margin-right: 10px;
+  padding-left: 47px;
 }
 
 .account__link--login svg {
   position: absolute;
   top: 14px;
-  left: 12px;
+  left: 13px;
 }
 
 .account__link--login:hover path,
@@ -970,18 +970,20 @@ a {
   position: relative;
 
   margin: 0;
-  margin-left: -12px;
+  margin-left: -11px;
   margin-top: auto;
-  padding: 10px 20px 10px 33px;
+  padding: 10px 20px 10px 31px;
 
   display: inline-block;
 
-  min-width: 123px;
+  min-width: 124px;
 
   color: #ffffff;
   background-color: #ee3643;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
   vertical-align: top;
 }
 
@@ -989,7 +991,7 @@ a {
   content: "";
   position: absolute;
   top: 0;
-  right: -20px;
+  right: -19px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -1807,7 +1809,7 @@ a {
 
 .account-name__link--name svg {
   position: absolute;
-  top: 11px;
+  top: 10px;
   left: 14px;
 }
 
