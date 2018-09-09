@@ -341,7 +341,7 @@ a {
 }
 
 .menu-user {
-  padding: 49px 0 40px;
+  padding: 46px 0 39px;
 
   display: -webkit-box;
   display: -ms-flexbox;
@@ -352,8 +352,7 @@ a {
 }
 
 .menu-user__title {
-  margin: 0;
-  margin-right: 20px;
+  margin: 3px 19px 0 0;
   padding: 0 51px;
 
   width: 300px;
@@ -373,22 +372,22 @@ a {
 .menu-user__phone {
   position: relative;
   margin: 0;
-  margin-bottom: 1px;
-  padding: 6px 40px 10px 70px;
+  margin-bottom: 4px;
+  padding: 9px 40px 9px 72px;
 
   display: block;
 
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
-  border: 4px solid #ffffff;
+  border: 3px solid #ffffff;
 }
 
 .menu-user__phone::before {
   content: "";
   position: absolute;
-  top: 6px;
-  left: 10px;
+  top: 10px;
+  left: 12px;
 
   width: 19px;
   height: 19px;
@@ -425,13 +424,13 @@ a {
           justify-content: flex-start;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  width: 280px;
+  width: 281px;
 }
 
 .account__link {
   display: block;
   margin: 0;
-  padding: 9px 25px 11px;
+  padding: 12px 25px;
 
   font-size: 21px;
   line-height: 21px;
@@ -455,13 +454,13 @@ a {
 .account__link--login {
   position: relative;
 
-  margin-right: 10px;
+  margin-right: 11px;
   padding-left: 46px;
 }
 
 .account__link--login svg {
   position: absolute;
-  top: 11px;
+  top: 14px;
   left: 12px;
 }
 
@@ -514,7 +513,7 @@ a {
 }
 
 .site-list__link {
-  padding: 20px 31px 22px;
+  padding: 20px 31px 23px;
 
   display: block;
   color: #ffffff;
@@ -983,6 +982,7 @@ a {
   background-color: #ee3643;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
+  vertical-align: top;
 }
 
 .product-cart__price::after {
@@ -1448,6 +1448,8 @@ a {
 
 .company__text--contacts {
   margin-bottom: 31px;
+
+  width: 183px;
 }
 
 .company__map {
@@ -1753,6 +1755,7 @@ a {
 }
 
 .account-inner {
+  margin-top: 3px;
   margin-left: auto;
 
   width: 300px;
