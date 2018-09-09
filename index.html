@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
   <body class="page-body">
     <header class="page-header">
@@ -55,7 +55,7 @@
                 <a class="site-list__link" href="#">Компания</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="#">Каталог</a>
+                <a class="site-list__link" href="catalog.html">Каталог</a>
               </li>
               <li class="site-list__item">
                 <a class="site-list__link" href="#">Новости</a>
@@ -280,19 +280,20 @@
           <div class="service__slider">
             <ul class="service-tab__list list-reset">
               <li class="service-tab__item">
-                <a class="service-tab__link service-tab__link-active">Доставка</a>
+                <a class="service-tab__link service-tab__link-active" href="#">Доставка</a>
               </li>
               <li class="service-tab__item">
-                <a class="service-tab__link">Гарантия</a>
+                <a class="service-tab__link" href="#">Гарантия</a>
               </li>
               <li class="service-tab__item">
-                <a class="service-tab__link">Кредит</a>
+                <a class="service-tab__link" href="#">Кредит</a>
               </li>
             </ul>
             <div class="service__slides">
               <section class="service__slide service__slide--delivery service__slide-active">
                 <h3 class="service__slide-title">Доставка</h3>
-                <p class="service__text service__text--delivery">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
+                <p class="service__text service__text--delivery">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!
+                </p>
               </section>
               <section class="service__slide service__slide--warranty">
                 <h3 class="service__slide-title">Гарантия</h3>
@@ -323,7 +324,7 @@
           <div class="company__contacts">
             <h2 class="company__title">Контакты</h2>
             <p class="company__text company__text--contacts">Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-            <a class="company__map" href="#">
+            <a class="company__map" href="https://www.google.com/maps?ll=59.938794,30.323083&z=16&t=m&hl=ru-RU&gl=RU&mapclient=embed&q=%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3+191186">
               <img src="img/mini-map.jpg" width="300" height="158" alt="карта">
             </a>
             <a class="btn company__link-write" href="login.html">Заблудились? Напишите нам!</a>
@@ -344,33 +345,33 @@
             </div>
             <div class="footer-top__menu footer-menu">
               <ul class="footer-menu__list footer-menu__list--upper">
-                <li class="footer-menu__item">
+                <li class="footer-menu__item footer-menu__item--upper">
                   <a class="footer-menu__link footer-menu__link--upper" href="#">Компания</a>
                 </li>
-                <li class="footer-menu__item">
+                <li class="footer-menu__item footer-menu__item--upper">
                   <a class="footer-menu__link footer-menu__link--upper" href="#">Новости</a>
                 </li>
-                <li class="footer-menu__item">
+                <li class="footer-menu__item footer-menu__item--upper">
                   <a class="footer-menu__link footer-menu__link--upper" href="#">Каталог</a>
                 </li>
-                <li class="footer-menu__item">
+                <li class="footer-menu__item footer-menu__item--upper">
                   <a class="footer-menu__link footer-menu__link--upper" href="#">Доставка</a>
                 </li>
-                <li class="footer-menu__item">
+                <li class="footer-menu__item footer-menu__item--upper">
                   <a class="footer-menu__link footer-menu__link--upper" href="#">Контакты</a>
                 </li>
               </ul>
               <ul class="footer-menu__list footer-menu__list--lower">
-                <li class="footer-menu__item">
+                <li class="footer-menu__item footer-menu__item--lower">
                   <a class="footer-menu__link footer-menu__link--lower" href="#">Материалы</a>
                 </li>
-                <li class="footer-menu__item">
+                <li class="footer-menu__item footer-menu__item--lower">
                   <a class="footer-menu__link footer-menu__link--lower" href="#">Техника</a>
                 </li>
-                <li class="footer-menu__item">
+                <li class="footer-menu__item footer-menu__item--lower">
                   <a class="footer-menu__link footer-menu__link--lower" href="#">Инструмент</a>
                 </li>
-                <li class="footer-menu__item">
+                <li class="footer-menu__item footer-menu__item--lower">
                   <a class="footer-menu__link footer-menu__link--lower" href="#">Спецпредложения</a>
                 </li>
               </ul>
@@ -444,13 +445,13 @@
     </section>
     <section class="modal map-popup">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651577!2d30.320894616010335!3d59.93879418187626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1536062048634" width="940" height="448" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651577!2d30.320894616010335!3d59.93879418187626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1536062048634" width="940" height="448" style="border:0" allowfullscreen></iframe>
       <p class="map-popup__wrapper-img">
         <img class="map-popup__img" src="img/map.jpg" width="940" height="448" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </p>
       <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
     <div class="modal-overlay"></div>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
